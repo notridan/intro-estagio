@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração de HTML Básico</title>
+</head>
+<body>
+    <header>
+        <h1>Explorando o Poder do HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="#textos">Textos</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#tabelas">Tabelas</a></li>
+                <li><a href="#formularios">Formulários</a></li>
+                <li><a href="#multimedia">Multimídia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="textos">
+            <h2>Elementos de Texto</h2>
+            <p>Este é um parágrafo normal. HTML permite formatar <strong>texto em negrito</strong>, <em>texto em itálico</em>, <mark>texto destacado</mark> e <u>texto sublinhado</u>.</p>
+            <p>Também podemos ter <sub>texto subscrito</sub> e <sup>texto sobrescrito</sup>.</p>
+            
+            <blockquote>
+                "HTML é a linguagem fundamental da web" - <cite>Tim Berners-Lee</cite>
+            </blockquote>
+            
+            <address>
+                Criado por: Seu Nome<br>
+                Email: seuemail@exemplo.com
+            </address>
+            
+            <details>
+                <summary>Clique para expandir</summary>
+                <p>Este é um conteúdo que pode ser expandido e recolhido usando apenas HTML!</p>
+            </details>
+        </section>
+
+        <section id="listas">
+            <h2>Tipos de Listas</h2>
+            
+            <h3>Lista Ordenada</h3>
+            <ol>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+            
+            <h3>Lista Não-Ordenada</h3>
+            <ul>
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ul>
+            
+            <h3>Lista de Definição</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language - a linguagem de marcação para páginas web</dd>
+                
+                <dt>Elemento</dt>
+                <dd>Um componente de um documento HTML definido por tags</dd>
+            </dl>
+        </section>
+
+        <section id="tabelas">
+            <h2>Tabelas</h2>
+            <table border="1">
+                <caption>Exemplos de Elementos HTML</caption>
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Define um parágrafo</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt; a &lt;h6&gt;</td>
+                        <td>Define cabeçalhos de diferentes níveis</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>Define um hyperlink</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">E muitos outros elementos disponíveis</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="formularios">
+            <h2>Formulários</h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+                    
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha"><br><br>
+                    
+                    <label>Gênero:</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="outro" name="genero" value="outro">
+                    <label for="outro">Outro</label><br><br>
+                    
+                    <label>Interesses:</label><br>
+                    <input type="checkbox" id="html" name="interesses" value="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="interesses" value="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="interesses" value="js">
+                    <label for="js">JavaScript</label><br><br>
+                    
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="">Selecione um país</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="eua">Estados Unidos</option>
+                    </select><br><br>
+                    
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Deixe sua mensagem"></textarea><br><br>
+                    
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data"><br><br>
+                    
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="multimedia">
+            <h2>Conteúdo Multimídia</h2>
+            
+            <h3>Imagens</h3>
+            <figure>
+                <img src="https://via.placeholder.com/300x200" alt="Imagem de exemplo" width="300" height="200">
+                <figcaption>Figura 1: Uma imagem de exemplo</figcaption>
+            </figure>
+            
+            <h3>Elementos Semânticos</h3>
+            <article>
+                <h4>Este é um Artigo</h4>
+                <p>Um artigo representa um conteúdo independente que pode ser distribuído ou reutilizado.</p>
+            </article>
+            
+            <aside>
+                <h4>Informação Complementar</h4>
+                <p>Esta é uma seção lateral com informações relacionadas ao conteúdo principal.</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>Demonstração dos recursos do HTML puro - sem CSS ou JavaScript</p>
+        <p><small>&copy; 2024 Demonstração HTML</small></p>
+    </footer>
+</body>
+</html>
